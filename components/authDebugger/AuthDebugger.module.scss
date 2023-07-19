@@ -1,0 +1,31 @@
+.container {
+  font-size: 0.875rem;
+}
+
+.mb_2 {
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.code {
+  word-break: break-all;
+  color: #1a202c;
+}
+
+.pre_wrap {
+  white-space: pre-wrap;
+  background-color: #f7fafc;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.section {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  padding: 1rem;
+}

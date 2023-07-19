@@ -1,0 +1,13 @@
+.lc-Text {
+  display: block;
+  line-height: 1.5;
+  margin: 0;
+
+  &--measured {
+    max-width: 33em;
+  }
+
+  &--inline {
+    display: inline;
+  }
+}

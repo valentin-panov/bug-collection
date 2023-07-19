@@ -1,0 +1,27 @@
+@import "styles/colors";
+
+.inputsContainer {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  margin-bottom: 0.5rem;
+  grid-gap: 0.5rem;
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  &_block {
+    width: 100%;
+    padding-bottom: 0.25rem;
+
+    &_label {
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+.btnContainer {
+  display: flex;
+  padding: 0.25rem 0.75rem;
+}

@@ -1,0 +1,67 @@
+@import "styles/colors";
+
+.container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+  height: 100%;
+
+  &_input {
+    // sm:w-64
+    padding: 0.5rem 1rem;
+    border-width: 1px;
+    box-sizing: border-box;
+    background-color: #f7fafc;
+    border-color: #e2e8f0;
+    border-radius: 9999px;
+    width: 8rem;
+    color: #606060;
+    outline: 0 transparent !important;
+
+    & :focus {
+      outline: 0;
+    }
+  }
+
+  &_navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1rem;
+
+    &_btnContainer {
+      //height: 3rem;
+    }
+  }
+
+  &_button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 9999px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background: $bg-gradient-fwd;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    outline: 0 transparent !important;
+
+    & :focus {
+      outline: none;
+    }
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(1.1);
+      outline: 0;
+    }
+
+    &:active {
+      background: $bg-gradient-rev;
+    }
+  }
+}

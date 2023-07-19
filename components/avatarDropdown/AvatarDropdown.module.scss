@@ -1,0 +1,63 @@
+@import "styles/colors";
+
+.dropdownItemButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &_text {
+    color: $gray-700;
+  }
+}
+
+.dropdownContent {
+  background-color: $pureWhite;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  padding: 1rem;
+  box-shadow: $shadow-lg;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+
+  &_item {
+    margin-top: 0.25rem;
+    color: $gray-700;
+  }
+}
+
+.avatarDropdown {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background: $bg-gradient-fwd;
+  box-shadow: $shadow-lg;
+  outline: 0 transparent !important;
+  border-radius: 9999px;
+
+  &_avatar {
+    border-radius: 9999px;
+    border-color: $pureWhite;
+    border-width: 2px;
+    width: 1.5rem;
+
+  }
+
+  &_userName {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    color: $pureWhite;
+
+
+  }
+
+  &_arrowCont {
+    margin-right: 0.25rem;
+    color: $pureWhite;
+
+  }
+
+  &_dropContent {
+    position: relative;
+  }
+}

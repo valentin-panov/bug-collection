@@ -1,0 +1,58 @@
+// Colors
+$pureWhite: #ffffff;
+$pureBlack: #000000;
+
+$buttonHover: #ffc76d;
+
+$red-100: #fff5f5;
+$red-500: #f56565;
+$red-600: #e53e3e;
+
+$green-100: #f0fff4;
+$green-600: #38a169;
+$green-700: #2f855a;
+
+$teal-900: #234e52;
+
+$yellow-100: #fffff0;
+$yellow-200: #fefcbf;
+$yellow-300: #faf089;
+$yellow-400: #f6e05e;
+$yellow-500: #ecc94b;
+$yellow-600: #d69e2e;
+$yellow-700: #b7791f;
+$yellow-800: #975a16;
+$yellow-900: #744210;
+
+$gray-100: #f7fafc;
+$gray-200: #edf2f7;
+$gray-300: #e2e8f0;
+$gray-400: #cbd5e0;
+$gray-500: #a0aec0;
+$gray-600: #718096;
+$gray-700: #4a5568;
+$gray-800: #2d3748;
+$gray-900: #1a202c;
+
+$blue-100: #ebf8ff;
+$blue-300: #90cdf4;
+$blue-400: #63b3ed;
+$blue-500: #4299e1;
+$blue-600: #3182ce;
+$blue-700: #2b6cb0;
+$blue-800: #2c5282;
+$blue-900: #2a4365;
+
+$bg-gradient-fwd: linear-gradient(
+  135deg,
+  rgba(0, 200, 255, 1) 0%,
+  rgba(0, 97, 215, 1) 100%
+);
+$bg-gradient-rev: linear-gradient(
+  135deg,
+  rgba(0, 97, 215, 1) 0%,
+  rgba(0, 200, 255, 1) 100%
+);
+
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);

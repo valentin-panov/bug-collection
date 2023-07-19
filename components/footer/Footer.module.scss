@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  padding: 1.5rem;
+  grid-area: footer;
+
+  &_4btn {
+    margin-left: 0.5rem;
+  }
+
+  &_authD {
+    margin-top: 1rem;
+  }
+}

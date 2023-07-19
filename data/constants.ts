@@ -1,0 +1,5 @@
+export const stripe_api_key: string = "you.need.to.buy.drink.first";
+export const dynatrace_internal_token: string =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMDciLCJuYW1lIjoiSmFtZXMgQm9uZCIsInBhc3N3b3JkIjoieW91Lm5lZWQudG8uYnV5LmRyaW5rLmZpcnN0IiwiaWF0IjoxNTE2MjM5MDIyfQ.UgC2toBL6kA-0NGd-iej8KpHkdeu8_BcIpUyQrVfUd0";
+export const aws_session_token: string =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";

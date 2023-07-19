@@ -1,0 +1,13 @@
+@import "styles/colors";
+
+.title {
+  color: $gray-800;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.body {
+  color: $gray-700;
+  font-size: 0.875rem;
+}

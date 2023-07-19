@@ -1,0 +1,76 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "sourceMap": true,
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "./components/*"
+      ],
+      "@styles/*": [
+        "./styles/*"
+      ],
+      "@images/*": [
+        "./images/*"
+      ],
+      "@data/*": [
+        "./data/*"
+      ],
+      "@layouts/*": [
+        "./layouts/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ],
+      "@lib/*": [
+        "./lib/*"
+      ],
+      "@context/*": [
+        "./context/*"
+      ],
+      "@interfaces/*": [
+        "./interfaces/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ],
+      "@services/*": [
+        "./services/*"
+      ],
+      "@models/*": [
+        "./models/*"
+      ],
+      "@packages/*": [
+        "./packages/*"
+      ]
+    },
+    "incremental": true
+  },
+  "exclude": [
+    "node_modules",
+    "sonar-scanner"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}

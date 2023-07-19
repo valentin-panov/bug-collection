@@ -1,0 +1,52 @@
+@import "styles/colors";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  //min-width: 20rem;
+}
+
+.cardWrapper {
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background-color: $blue-500;
+}
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.avatarWrapper {
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+
+.names {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: $gray-900;
+}
+
+.bio {
+  color: $gray-600;
+  font-style: italic;
+}
+
+.userDetailLabel {
+  color: $gray-600;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+}

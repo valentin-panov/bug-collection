@@ -1,0 +1,9 @@
+envoy:
+  # envoy.schema -- envoy protocol
+  schema: "http"
+  # envoy.host -- envoy host
+  host: "envoy.service.envoy"
+  # envoy.port -- envoy port
+  port: "1599"
+  # envoy.credentials -- envoy credentials
+  credentials: "envoy@envoy"

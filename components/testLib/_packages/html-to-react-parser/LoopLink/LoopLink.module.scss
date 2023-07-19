@@ -1,0 +1,16 @@
+//@import '../../../../../tokens/dist/scss/system';
+
+.lc-Link {
+  &--isBold {
+    font-weight: 700;
+  }
+
+  &:focus {
+    // Adding overflow: auto; stops the focus glitch in Safari
+    overflow: auto;
+  }
+
+  &--displayBlock {
+    display: block;
+  }
+}

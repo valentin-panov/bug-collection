@@ -1,0 +1,34 @@
+@import "styles/colors";
+//
+//.rounded_full {
+//  border-radius: 9999px;
+//}
+
+.btn {
+  box-shadow: $shadow-lg;
+  outline: 0 transparent !important;
+  border-radius: 9999px;
+
+  &_gradient {
+    background: $bg-gradient-fwd;
+  }
+}
+
+.link {
+  font-weight: 500;
+  color: $blue-600;
+
+  &:hover {
+    color: $blue-400;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 0;
+    text-decoration: underline;
+  }
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}

@@ -1,0 +1,22 @@
+commit:
+  connect:
+    stream: astrain_30_05_2023
+    url: https://poc355.coverity.synopsys.com
+
+analyze:
+  location: local
+  aggressiveness-level: low
+  callgraph-metrics: true
+  cov-analyze-args: [ --disable-spotbugs, --enable-audit-dataflow ] # specifiy extra params here
+
+  trust:
+    all: false #distrust all input domains
+
+  checkers:
+    all: true
+    audit: true
+
+    webapp-security:
+      enabled: true
+      aggressiveness-level: high
+

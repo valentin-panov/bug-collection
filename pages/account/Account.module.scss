@@ -1,0 +1,39 @@
+@import "styles/colors";
+
+.card {
+  &_header {
+    font-weight: 700;
+    color: $blue-900;
+
+  }
+
+  &_wrapper {
+    margin-top: 1rem;
+
+  }
+
+  &_cta {
+    color: $blue-900;
+  }
+
+  &_selectBlock {
+    margin-top: 0.5rem;
+    display: flex;
+
+    &_select {
+      color: $blue-900;
+    }
+  }
+}
+
+.message {
+  margin-left: 1rem;
+
+  &_success {
+    color: $green-700;
+  }
+
+  &_error {
+    color: $red-500;
+  }
+}

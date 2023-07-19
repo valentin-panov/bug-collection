@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  padding: 1.25rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+
+  &_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &_buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

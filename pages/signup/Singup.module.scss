@@ -1,0 +1,108 @@
+@import "styles/colors";
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  padding: 2rem;
+  @media (min-width: 640px) {
+    width: 50%;
+    padding-top: 2.5rem;
+  }
+
+  &_cutter {
+    border-radius: 0.25rem;
+    overflow: hidden;
+    background-color: $blue-500;
+  }
+}
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  @media (min-width: 640px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  &_inlay {
+    max-width: 28rem;
+    width: 100%;
+  }
+}
+
+.logoLinkWrapper {
+  width: 8rem;
+  margin: auto auto 1.5rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+  color: $gray-900;
+}
+
+.subtitle {
+  color: $gray-600;
+  text-align: center;
+}
+
+.formContainer {
+  margin-top: 2rem;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-areas:
+    "f_name l_name"
+    "email email"
+    "pass pass"
+    "submit .";
+  grid-gap: 0.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+
+  &_label {
+    margin-bottom: 0.25rem;
+  }
+
+  &_Fname {
+    grid-area: f_name;
+  }
+
+  &_Lname {
+    grid-area: l_name;
+  }
+
+  &_Email {
+    grid-area: email;
+  }
+
+  &_Pass {
+    grid-area: pass;
+  }
+}
+
+.submitBtnWrapper {
+  margin-top: 0.75rem;
+  grid-area: submit;
+}

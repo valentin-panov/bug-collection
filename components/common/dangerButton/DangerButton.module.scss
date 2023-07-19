@@ -1,0 +1,16 @@
+@import "styles/colors";
+
+.btn {
+  color: $red-600;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-color: $red-600;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  &:hover {
+    color: $pureWhite;
+    background-color: $red-600;
+  }
+}
