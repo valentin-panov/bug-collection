@@ -10,9 +10,9 @@ const HomePage: React.FC = () => {
     <div className={s.homePage}>
       <div className={s.container}>
         <h1 className={s.mainTitle}>
-          Books, accessories and other goods from the metropolis.
+          Discover the hidden world of bugs:
         </h1>
-        <h2 className={s.subTitle}>Refresh your mind</h2>
+        <h2 className={s.subTitle}>where curiosity takes flight!</h2>
         <div className={s.linkContainer}>
           <GradientLink
             text="Get Started"
