@@ -35,3 +35,6 @@ Future developments:
 
 1. ReactDOMServer.renderToStaticMarkup
 2. vulnerable iframe
+
+
+https://venngage.com/tools/accessible-color-palette-generator
