@@ -27,7 +27,7 @@
     "cross-env": "^7.0.3",
     "debounce": "1.2.1",
     "domhandler": "^4.2.2",
-    "dompurify": "^3.0.3",
+    "dompurify": "^3.2.4",
     "dotenv": "^16.0.3",
     "formik": "^2.1.4",
     "html-react-parser": "^1.4.14",
