@@ -56,11 +56,11 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
+    "@babel/core": "^7.26.10",
     "@babel/preset-typescript": "^7.14.5",
     "@next/eslint-plugin-next": "^12.1.4",
     "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^10.4.7",
+    "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.13",
@@ -89,7 +89,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "4.3.8",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.3.1",
+    "jest": "^28.0.0",
     "jest-axe": "^5.0.1",
     "jest-sonar-reporter": "^2.0.0",
     "msw": "^0.47.4",
