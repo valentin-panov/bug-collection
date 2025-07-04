@@ -11,6 +11,22 @@ export default function Xss() {
   useEffect(() => {
     // window.top[1].document.body.innerHTML = "Hi from credentialless";
 
+    document.hasStorageAccess().then((hasAccess) => {
+      if (!hasAccess) {
+        document
+          .requestStorageAccess()
+          .then(() => {
+            alert("got you");
+          })
+          .catch(() => {
+            // Доступ не предоставлен
+            alert("safe");
+          });
+      } else {
+        alert("not supported");
+      }
+    });
+
     try {
       const cookie = window.top[1]?.document?.cookie || null;
       setCookies(cookie);
