@@ -19,9 +19,9 @@ export default function Xss() {
   return (
     <>
       <h2 className={s.title}>XSS.</h2>
-      <p>{window?.top[1]?.document?.cookie}</p>
-      <p>{window.frames}</p>
-      <p>{window.top}</p>
+      <p>COOKIES: {window?.top[1]?.document?.cookie}</p>
+      <p>FRAMES: {window.frames}</p>
+      <p>TOP: {window.top}</p>
       <p className={s.description}>
         <GradientLink to={`/`} text={"Go back to safety"} />
       </p>
