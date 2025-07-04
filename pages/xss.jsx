@@ -43,10 +43,10 @@ export default function Xss() {
   return (
     <>
       <h2 className={s.title}>XSS:</h2>
-      <p>COOKIES: {cookies.toString() ?? "Unavailable"}</p>
-      <p>FRAMES: {frames.toString() ?? "Unavailable"}</p>
-      <p>TOP: {top.toString() ?? "Unavailable"}</p>
-      <p>localStorageDump: {localStorageDump.toString() ?? "Unavailable"}</p>
+      <p>COOKIES: {String(cookies) ?? "Unavailable"}</p>
+      <p>FRAMES: {String(frames) ?? "Unavailable"}</p>
+      <p>TOP: {String(top) ?? "Unavailable"}</p>
+      <p>localStorageDump: {String(localStorageDump) ?? "Unavailable"}</p>
       <p className={s.description}>
         <GradientLink to="/" text="Go back to safety" />
       </p>
