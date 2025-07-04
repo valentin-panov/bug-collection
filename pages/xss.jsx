@@ -6,6 +6,7 @@ export default function Xss() {
   useEffect(() => {
     // window.top[1].document.body.innerHTML = "Hi from credentialless";
     alert(window.top[1].document.cookie);
+    console.log(Object.fromEntries(Object.entries(localStorage)));
   });
   return (
     <>
