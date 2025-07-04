@@ -52,7 +52,8 @@ export default async function middleware(request: NextRequest) {
   if (
     request.nextUrl.pathname.startsWith("/api/signup") ||
     request.nextUrl.pathname.startsWith("/api/auth/authenticate") ||
-    request.nextUrl.pathname.startsWith("/api/auth/logout")
+    request.nextUrl.pathname.startsWith("/api/auth/logout") ||
+    request.nextUrl.pathname.startsWith("/xss")
   ) {
     console.log("unprotected route => [middleware exit]");
     return response;
@@ -69,7 +70,7 @@ export default async function middleware(request: NextRequest) {
   ) {
     if (verifiedToken) {
       console.log(
-        "auth page within authenticated session, redirect to homepage => [middleware exit]"
+        "auth page within authenticated session, redirect to homepage => [middleware exit]",
       );
       return redirectToHome();
     } else {
@@ -87,7 +88,7 @@ export default async function middleware(request: NextRequest) {
     // }
     if (!verifiedToken) {
       console.log(
-        "no access token found. API request redirect => [middleware exit]"
+        "no access token found. API request redirect => [middleware exit]",
       );
       return redirectAPI(request);
     }
@@ -96,7 +97,7 @@ export default async function middleware(request: NextRequest) {
   } else {
     if (!verifiedToken) {
       console.log(
-        "no access token found, non-API redirect => [middleware exit]"
+        "no access token found, non-API redirect => [middleware exit]",
       );
       return redirectToHome();
     }
@@ -112,7 +113,7 @@ export default async function middleware(request: NextRequest) {
       console.log(
         "[",
         currentPath?.path,
-        "] isn't allowed => [middleware exit]"
+        "] isn't allowed => [middleware exit]",
       );
       return redirectToHome();
     }
