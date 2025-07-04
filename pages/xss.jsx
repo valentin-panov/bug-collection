@@ -28,7 +28,7 @@ export default function Xss() {
     }
 
     try {
-      setFrames(String(window.frames));
+      setFrames(window.frames.length.toString());
     } catch (e) {
       console.error("Frames access error:", e);
     }
@@ -44,9 +44,12 @@ export default function Xss() {
     <>
       <h2 className={s.title}>XSS:</h2>
       <p>COOKIES: {String(cookies) ?? "Unavailable"}</p>
-      <p>FRAMES: {String(frames) ?? "Unavailable"}</p>
+      <p>FRAMES: {frames ?? "Unavailable"}</p>
       <p>TOP: {String(top) ?? "Unavailable"}</p>
-      <p>localStorageDump: {String(localStorageDump) ?? "Unavailable"}</p>
+      <p>
+        localStorageDump:{" "}
+        {JSON.stringify(localStorageDump, null, 2) ?? "Unavailable"}
+      </p>
       <p className={s.description}>
         <GradientLink to="/" text="Go back to safety" />
       </p>
