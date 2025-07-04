@@ -5,8 +5,12 @@ import GradientLink from "../components/common/buttons/GradientLink";
 export default function Xss() {
   useEffect(() => {
     // window.top[1].document.body.innerHTML = "Hi from credentialless";
-    alert(window.top[1].document.cookie);
-    console.log(Object.fromEntries(Object.entries(localStorage)));
+    try {
+      console.info(window.top[1].document.cookie);
+      console.info(Object.fromEntries(Object.entries(localStorage)));
+    } catch (e) {
+      console.error(e);
+    }
   });
   return (
     <>
