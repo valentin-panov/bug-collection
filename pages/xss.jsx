@@ -6,7 +6,7 @@ export default function Xss() {
   useEffect(() => {
     // window.top[1].document.body.innerHTML = "Hi from credentialless";
     try {
-      console.info(window.top[1].document.cookie);
+      console.info(window.top[1]?.document?.cookie);
     } catch (e) {
       console.error(e);
     }
