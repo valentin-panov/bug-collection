@@ -7,14 +7,19 @@ export default function Xss() {
     // window.top[1].document.body.innerHTML = "Hi from credentialless";
     try {
       console.info(window.top[1].document.cookie);
+    } catch (e) {
+      console.error(e);
+    }
+    try {
       console.info(Object.fromEntries(Object.entries(localStorage)));
     } catch (e) {
       console.error(e);
     }
-  });
+  }, []);
   return (
     <>
       <h2 className={s.title}>XSS.</h2>
+      <p>{window?.top[1]?.document?.cookie}</p>
       <p className={s.description}>
         <GradientLink to={`/`} text={"Go back to safety"} />
       </p>
