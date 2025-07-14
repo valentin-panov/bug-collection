@@ -46,7 +46,7 @@
     "react-resize-detector": "^6.7.6",
     "react-router-dom": "^5.2.0",
     "sanitize-html": "^2.12.1",
-    "sass": "^1.35.2",
+    "sass": "^1.83.4",
     "shelljs": "^0.8.4",
     "swiper": "^6.8.4",
     "uuid": "^8.3.2",
